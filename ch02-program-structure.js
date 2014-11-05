@@ -29,7 +29,7 @@ for (var num = 1; num <= 100; num++) {
   console.log(output);
 };
 
-//FizzBuzz
+//FizzBuzz var 2
 
 for (var num = 1; num <= 100; num++) {
   var output = '';
@@ -39,3 +39,42 @@ for (var num = 1; num <= 100; num++) {
     output += "Buzz";
   console.log(output || num);
 };
+
+//Chess Board
+
+for (var row = 1; row <= 8; row++) {
+  if (row % 2 == 0)
+    console.log(' # # # #');
+  else
+    console.log('# # # # ');
+};
+
+//Chess Board var 2
+
+var totalrows = 8
+var board = ""
+for (var row = 1; row <= totalrows; row++) {
+  if (row % 2 == 0)
+    board += (" # # # #\n");
+  else
+    board += ("# # # # \n");
+};
+console.log(board)
+
+//Chess Board var 3
+
+var grid = 8;
+var board = "";
+
+for (var row = 1; row <= grid; row++) {
+  for(col = 1;col <= grid; col++){
+  if ((row + col) % 2 == 0)
+      board += '#';
+    else
+      board += ' ';
+  }
+  board += '\n';
+}
+
+console.log(board);
+
