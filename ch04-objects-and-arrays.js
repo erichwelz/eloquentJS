@@ -56,3 +56,13 @@ function range(start, end, step) {
   }
 
 console.log(range(5, 2, -1))
+
+//reversing an array
+
+function reverseArray(arrin) {
+  arrout = [];
+  for (var i = arrin.length - 1; i >= 0; i--) {
+    arrout.push(arrin[i]);
+  }
+  return arrout;
+}
