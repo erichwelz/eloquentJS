@@ -66,3 +66,27 @@ function reverseArray(arrin) {
   }
   return arrout;
 }
+
+//reversing an array in place
+
+
+function reverseArrayInPlace(arr) {
+  for (var i = Math.floor((arr.length /2 )) - 1; i >= 0; i--) {
+    front = arr[i];
+    back = arr[arr.length - 1 - i];
+    arr[i] = back;
+    arr[arr.length - 1 - i] = front;
+  }
+  return arr;
+}
+
+// reversing an array in place v2
+
+function reverseArrayInPlace(arr) {
+  for (var i = 0; i < Math.floor(arr.length /2 ); i++) {
+    var old = arr[i];
+    arr[i] = arr[arr.length - 1 - i];
+    arr[arr.length - 1 - i] = old;
+  }
+  return arr;
+}
