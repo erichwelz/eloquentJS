@@ -48,3 +48,12 @@ function verify(regexp, yes, no) {
       console.log("Unexpected match for '" + s + "'");
   });
 }
+
+//Quoting Style
+// Replace dialogue quotes with double quotes
+var text = "'I'm the cook,' he said, 'it's my job.'";
+// Read about how to make this call
+// See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+// g is global
+console.log(text.replace(/A/g, "B"));
+// → "I'm the cook," he said, "it's my job."
